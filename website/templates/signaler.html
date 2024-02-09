@@ -1,0 +1,22 @@
+{%extends 'general.html'%}
+{%block content%}
+<div class="container-register">
+    <form action="" method="POST">
+        <div class="csrf-field">
+            {{ signal_form.hidden_tag() }}
+        </div> 
+         <!-- eviter les cross forgery request attacks -->
+        <fieldset class="form">
+            <legend class="legend">signaler </legend>
+            <div class="form">
+                {{ signal_form.cause.label(class='form-control') }}
+                {{ signal_form.cause(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ signal_form.submit(class='btn') }}
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+{%endblock%}

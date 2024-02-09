@@ -1,0 +1,70 @@
+{% extends "general.html" %}
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert_{{ category }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="searchline">
+
+<form class="search" method="GET" action="{{ url_for('produits') }}">
+    <input class="input" type="text" name="search" placeholder="Recherche">
+    <button type="submit" class="btnd">Rechercher</button>
+</form>
+
+<!-- Ajoutez ces liens où vous voulez dans votre template -->
+<div class="dropdown">
+    <button class="dropbtn">Filtrer par</button>
+    <div class="dropdown-content">
+        <a href="{{ url_for('produits', sort_by='id') }}">ID</a>
+        <a href="{{ url_for('produits', sort_by='categories') }}">Catégories</a>
+        <a href="{{ url_for('produits', sort_by='proteines') }}">Protéines</a>
+        <a href="{{ url_for('produits', sort_by='fibres') }}">Fibres</a>
+        <a href="{{ url_for('produits', sort_by='energie') }}">Énergie</a>
+        <a href="{{ url_for('produits', sort_by='sugars') }}">Sucres</a>
+        <a href="{{ url_for('produits', sort_by='sodium') }}">Sodium</a>
+    </div>
+</div>
+
+</div>
+
+<!-- Affichez les produits filtrés ou tous les produits -->
+{% if products %}
+    <div class="display-p">
+        <h1 class="titre">Product List</h1>
+        <div class="produits">
+            {% for product in products %}
+                <a href="{{ url_for('product_info', product_id=product.id) }}">
+                    <div class="produit">
+                        <h2 class="nom-produit">{{ product.name }}</h2>
+                        {% if product.image_url %}
+                            <div class="image-produit">
+                                <img src="{{ product.image_url }}" alt="{{ product.name }}">
+                            </div>
+                        {% endif %}
+                        {% if session['admin'] %}
+                        <form method="POST" action="{{ url_for('produits') }}">
+                            {{ delete_form.hidden_tag() }}
+                            {{ delete_form.csrf_token }}
+                            {{ delete_form.barcode(value=product.id) }}
+                            {{ delete_form.delete(class='btn')  }}
+                        </form>
+                        
+                            {% endif %}
+                    </div>
+                </a>
+
+            {% endfor %}
+        </div>
+    </div>
+{% else %}
+    <p>Aucun produit trouvé.</p>
+{% endif %}
+
+
+
+{% endblock %}

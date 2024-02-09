@@ -1,0 +1,69 @@
+{%extends 'general.html' %}
+{%block content%}
+
+    <div class="produit-info">
+        {% if product.image_url %}
+        <div class="image-produit-info">
+            <img src="{{ product.image_url }}" alt="{{ product.name }}">
+         </div>
+ 
+         {% endif %}
+         <div class="info-text">
+            <h2 class="nom-produit-info">{{ product.name }}</h2>
+            <h3 class="petit-titre">code bar</h3>
+            <p>{{ product.id }}</p>
+        {%if product.categories%}
+            <h3 class="petit-titre">categories</h3>
+            <p>{{ product.categories }}</p>
+        {%endif%}
+        {%if product.components%}
+            <h3 class="petit-titre">ingredients</h3>
+            <p>{{ product.components }}</p>
+         {%endif%}
+         <h3>Nutritional Information</h1>
+
+         <table>
+           <thead>
+             <tr>
+               <th>Nutrient</th>
+               <th>Value</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Proteins</td>
+               <td>{{ product.proteines }}</td>
+             </tr>
+             <tr>
+               <td>Fibers</td>
+               <td>{{ product.fibres }}</td>
+             </tr>
+             <tr>
+               <td>Energie</td>
+               <td>{{ product.energie }}</td>
+             </tr>
+             <tr>
+               <td>Sugars</td>
+               <td>{{ product.sugars }}</td>
+             </tr>
+             <tr>
+               <td>Sodium</td>
+               <td>{{ product.sodium }}</td>
+             </tr>
+             <!-- Add more rows if needed -->
+           </tbody>
+         </table>
+         <div class="btn-boite">
+          <a class="btn-jb" href="{{url_for('produits')}}">revenir en arriere</a>
+          {% if session['login']==True %}
+          <a class="btn-jb" href="{{url_for('signaler', product_id=product.id)}}">signaler</a>
+          {% if session['admin']==True %}
+                  <a class="btn-jb" href="{{url_for('edit_product', product_id=product.id)}}">Modifier</a>
+          {%endif%}
+          {%endif%}
+          <a class="btn-jb" href="{{url_for('signale_display', product_id=product.id)}}">afficher les signalmements</a>
+
+         </div>
+                
+     </div>
+{% endblock %}

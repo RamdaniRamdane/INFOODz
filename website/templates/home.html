@@ -1,0 +1,14 @@
+{%extends "general.html"%}
+{%block content%}
+<div class="container-green">
+    <div class="container-item">
+        <div class="container-image">
+            <img src="{{ url_for('static', filename='image/home.jpg') }}" alt="">
+        </div>
+        <div class="container-ecriture">
+            <h1 class="h1-grand">restez informé des nutriments dans vos produits</h1>
+            <a class="btn-j" href="{{url_for('produits')}}">explorer</a>
+        </div>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,53 @@
+{%extends "general.html"%}
+{%block content%}
+<div class="container-register">
+    <form action="" method="POST">
+        <div class="csrf-field">
+            {{ form.hidden_tag() }}
+        </div> 
+         <!-- eviter les cross forgery request attacks -->
+        <fieldset class="form">
+            <legend class="legend">create an acount</legend>
+            <div class="form">
+                {{ form.nom.label(class='form-control') }}
+                {{ form.nom(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.prenom.label(class='form-control') }}
+                {{ form.prenom(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.username.label(class='form-control') }}
+                {{ form.username(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.wilaya.label(class='form-control') }}
+                {{ form.wilaya(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.email.label(class='form-control') }}
+                {{ form.email(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.password.label(class='form-control') }}
+                {{ form.password(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.confirm_password.label(class='form-control') }}
+                {{ form.confirm_password(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.submit(class='btn') }}
+            </div>
+            {% if form.errors %}
+            <p class="err">{{form.errors}}</p>
+            {% endif %}
+        </fieldset>
+    </form>
+    <div class="message">
+        <small class="muted-text">vous avez un compte ? 
+            <a href="{{url_for('login')}}" class="petit-lien">se connecter</a>
+        </small>
+    </div>
+</div>
+{%endblock%}

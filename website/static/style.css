@@ -1,0 +1,525 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: 'Arial', sans-serif;
+  background-color: #342628;
+  margin: 0;
+  padding: 0 50px;
+
+}
+
+
+
+.container-green{
+  background: #463335;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px;
+
+
+}
+.container-image{
+  box-sizing: border-box;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 50px;
+  overflow: hidden;
+
+}
+.container-image img {
+  width: 100%;
+}
+.container-ecriture{
+  box-sizing: border-box;
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 50px;
+  display: block;
+}
+.h1-grand{
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 70px;
+}
+
+
+.container-item{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.btn-j{
+  font-size: 2rem;
+  color: #333;
+  background-color: #FCA900;
+  margin: 0 auto;
+  padding: 10px 80px;
+  border-radius: 20px;
+  transition: .3s;
+}
+.btn-j:hover{
+  background-color: #835c0e;
+  font-size: 2.2rem;
+}
+
+.btn-boite {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-jb{
+  background: #FCA900;
+  margin: 0 0px 20px 20px;
+  border-radius: 10px;
+  padding: 2px 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+}
+.display-p{
+  text-align: center;
+}
+.titre{
+  background: #FCA900;
+  color: #342628;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 50px auto;
+  font-weight: 900;
+  border-radius: 10px;
+}
+.nav-bar{
+    background-color: #342628;
+    height: 52px;
+    display: flex;
+    padding: 5px;
+}
+
+.logo{
+    border-radius: 10%;
+    margin: auto 0;
+}
+
+.logo h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+
+}
+
+.logo span{
+    color: #FCA900;
+}
+
+.nav-links{
+    margin: auto ;
+
+
+}
+.nav-links a{
+    color: #fff;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.nav-lr{
+    margin: auto 0;
+    border: solid 1px #fff;
+    color: #fff;
+    margin-right: 10px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+    
+
+
+.nav-lr:hover{
+  background: #fff;
+  color: #342628;
+}
+
+
+
+/* 
+logincss */
+
+
+.container-register {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+.form {
+    margin-bottom: 15px;
+    color: #fff;
+    width:100%;
+    padding:20px;
+    border-radius: 10px;
+  }
+  
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-input {
+    width: calc(100% - 16px); /* Ajustez la largeur du champ de saisie */
+    background: none ;
+    border:none;
+    border-bottom: solid 2px #fff;
+    
+  }
+  
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FCA900;
+    color: #342628;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  
+.btn:hover {
+    background-color: #835c0e;
+  }
+  
+.message {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+.muted-text {
+    color: #888;
+  }
+  
+.petit-lien {
+    color: #FCA900;
+    text-decoration: none;
+  }
+  
+.petit-lien:hover {
+    text-decoration: underline;
+  }
+  
+.alert_success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+  }
+  
+.legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+.csrf-field {
+    display: none;
+  }
+.cacher{
+  display: none;
+}
+.line{
+  display: flex;
+}
+.user{
+  color: #fff;
+  margin-right: 30px;
+}
+
+  .produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - 20px), 1fr));
+    gap: 20px;
+}
+
+.produit {
+    background-color: #463335;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: .3s;
+    overflow: hidden; 
+    padding: 5px;
+}
+
+.produit:hover {
+    background-color: #8a686b;
+}
+.produit img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Aligne le dernier élément à droite */
+.produit:last-child {
+    margin-left: auto;
+}
+
+.produit h2 {
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  text-overflow: ellipsis; /* Remplacer le texte qui dépasse par des points de suspension */
+  margin: 20px 0;
+}
+  
+.image-produit{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  border: solid 10px #342628;
+  background: #fff;
+  }
+
+.btnn{
+  display: flex;
+}
+
+button {
+  background: #463335;
+  padding: 5px;
+  margin: auto;
+  border: none;
+  color: #fff;
+  width: 100px;
+  border-radius: 4px;
+
+}
+
+
+
+.nom-produit{
+  color: #342628;
+  background:#FCA900;
+  border-radius: 10px;
+
+}
+
+.produit-info{
+  display: flex;
+  background: #463335;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: scroll;
+  padding: 50px;
+
+}
+.image-produit-info{
+  box-sizing: border-box;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 50px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* horizontal*/
+  align-items: center; /*vertical*/
+
+}
+.image-produit-info img {
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto;
+  display: block;
+
+}
+.info-text{
+  width: 70%;
+  margin-right: 50px;
+}
+.info-text h2{
+  color: #342628;
+  background:#FCA900;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+  text-overflow: ellipsis; /* Remplacer le texte qui dépasse par des points de suspension */
+
+}
+.info-text h3{
+  color:#FCA900;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.info-text p{
+  color: #9a8286;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+.container-ecriture{
+  box-sizing: border-box;
+  width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 50px;
+  display: block;
+}
+
+
+/* table*/
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin: 0 auto 50px;
+}
+
+th, td {
+  border: 1px solid #342628;
+  padding: 8px;
+  text-align: left;
+  color: #9a8286;
+}
+
+th {
+  background-color: #342628;
+  color: #FCA900;
+}
+
+
+.signal{
+  box-sizing: border-box;
+  width: 20%;
+}
+
+.input{
+  background: none;
+  border: none;
+  border-bottom:solid 2px #fff ;
+  color: #fff;
+}
+/* Désactive l'effet de la bordure lorsqu'un champ d'entrée est cliqué */
+input:focus {
+  outline: none;
+}
+
+/* .nav-links a:focus{
+  border-bottom: solid 3px #fff;
+} */
+
+.current-page {
+  border-bottom: solid 3px #fff; 
+  font-weight: bold; 
+}
+
+
+.searchline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style pour le menu déroulant */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style pour le bouton du menu déroulant */
+.dropbtn {
+  background-color: #463335;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style pour la liste d'options du menu déroulant */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style pour les liens dans la liste d'options */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Changement de couleur lors du survol des liens */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Afficher la liste d'options lorsque le bouton est survolé */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.supprimer-button{
+  background:red ;
+  margin: 15px 0;
+}
+.wil{
+  background: #342628;
+  color: #999;
+  border: none;
+  border-bottom: solid 2px #fff;
+}
+.btnd{
+  transition: .5s;
+}
+.btnd:hover{
+  background-color: #342628;
+  pointer-events: visiblePainted;
+}
+.form-input{
+  color: #999;
+}
+

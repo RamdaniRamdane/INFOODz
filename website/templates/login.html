@@ -1,0 +1,42 @@
+{%extends "general.html"%}
+{%block content%}
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category , message in messages %}
+<div class="alert_{{category}}">
+    {{message}}
+    <!-- message de succe -->
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+<div class="container-register">
+    <form action="" method="POST">
+       <div class="csrf-field">
+            {{ form.hidden_tag() }}
+        </div> 
+         <!-- eviter les cross forgery request attacks -->
+        <fieldset class="form">
+            <legend class="legend">se connecter</legend>
+
+            <div class="form">
+                {{ form.email.label(class='form-control') }}
+                {{ form.email(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.password.label(class='form-control') }}
+                {{ form.password(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ form.submit(class='btn') }}
+            </div>
+        </fieldset>
+    </form>
+    <div class="message">
+        <small class="muted-text">vous avez ps un compte ? 
+            <a href="{{url_for('register')}}" class="petit-lien">s'inscrire</a>
+        </small>
+    </div>
+</div>
+
+{%endblock%}

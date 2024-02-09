@@ -1,0 +1,39 @@
+<!-- edit_product.html -->
+
+{% extends 'general.html' %}
+
+{% block content %}
+
+    <h1>Modifier le produit</h1>
+
+    <form method="POST" action="{{url_for('edit_product', product_id=product.id)}}" enctype="multipart/form-data">
+        <!-- Ajoutez des champs pour chaque attribut que l'administrateur peut modifier -->
+        <label for="proteines">Proteines:</label>
+        <input type="text" name="proteines" class="form-input"   value="{{ product.proteines }}">
+
+        <label for="fibres">Fibres:</label>
+        <input type="text" name="fibres" class="form-input"  value="{{ product.fibres }}">
+
+        <label for="energie">Energie:</label>
+        <input type="text" name="energie"class="form-input"   value="{{ product.energie }}">
+
+        <label for="sugars">Sugars:</label>
+        <input type="text" name="sugars"class="form-input"   value="{{ product.sugars }}">
+
+        <label for="sodium">Sodium:</label>
+        <input type="text" name="sodium" class="form-input"  value="{{ product.sodium }}">
+        <label for="categories">Catégories:</label>
+        <input type="text" name="categories" class="form-input" value="{{ product.categories }}">
+
+        <label for="ingredients">Ingrédients:</label>
+        <input type="text" name="ingredients" class="form-input"  value="{{ product.components}}">
+
+        <label for="new_photo">Nouvelle photo:</label>
+        <input type="file" class="rey" name="new_photo">
+
+
+
+        <button type="submit" class="btnd">Enregistrer</button>
+    </form>
+
+{% endblock %}

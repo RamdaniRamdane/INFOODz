@@ -1,0 +1,40 @@
+{%extends 'general.html'%}
+{%block content%}
+<form class="search" method="GET" action="{{ url_for('alerts', wilaya='') }}">
+    <select name="wilaya" id="wilaya" class="wil">
+        <option value="" {% if selected_wilaya == '' %}selected{% endif %}>Toutes les wilayas</option>
+        {% for value, label in wilaya_choices %}
+            <option value="{{ value }}" {% if selected_wilaya == value %}selected{% endif %} >{{ label }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" class="btnd">Filtrer</button>
+</form>
+
+
+
+
+<h1 class="titre">Signalements</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>nom du produit</th>
+            <!-- Ajoutez d'autres colonnes selon les champs de votre modèle de signalements -->
+            <th>cause du signalement</th>
+            <th>Wilaya</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for signalement in signalements %}
+            <tr>
+                <td>{{ signalement.nom_poduit }}</td>
+                <!-- Ajoutez d'autres colonnes selon les champs de votre modèle de signalements -->
+                <td>{{ signalement.cause}}</td>
+                <td>{{ signalement.wilaya }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{%endblock%}

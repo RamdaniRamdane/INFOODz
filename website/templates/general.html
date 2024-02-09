@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <h1>In<span class="f">F</span>ood</h1>
+        </div>
+        <div class="nav-links">
+            <a href="{{url_for('home')}}" id="home-link">Home</a>
+            <a href="{{url_for('produits')}}" id="products-link">Products</a>
+            <a href="{{url_for('alerts', wilaya='all')}}" id="alerts-link">alerts</a>
+        </div>
+        {% if session['login']==False %}
+
+            <a class="nav-lr" href="{{url_for('register')}}">s'inscrire</a>
+            <a class="nav-lr" href="{{url_for('login')}}">se connecter</a>
+
+        {% else %}
+
+        <a class="nav-lr" href="{{ url_for('logout') }}">logout</a>
+
+        {% if session['admin']%}
+
+        <a class="nav-lr" href="{{url_for('dashboard')}}">dashboard</a>
+
+        {%endif%}
+        {% endif %}
+    </div>
+    {%block content%}
+    {%endblock%}
+    <script src="{{ url_for('static', filename='style.js') }}"></script>
+
+</body>
+</html>

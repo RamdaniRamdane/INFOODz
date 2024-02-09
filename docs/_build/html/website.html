@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>website package &#8212; Documentation INFOOD 0.0.1</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b3523f8e" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=cb25574f" />
+    <script src="_static/documentation_options.js?v=5cd26065"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="website-package">
+<h1>website package<a class="headerlink" href="#website-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-website.auth">
+<span id="website-auth-module"></span><h2>website.auth module<a class="headerlink" href="#module-website.auth" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="website.auth.check_login">
+<span class="sig-prename descclassname"><span class="pre">website.auth.</span></span><span class="sig-name descname"><span class="pre">check_login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.auth.check_login" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-website.forms">
+<span id="website-forms-module"></span><h2>website.forms module<a class="headerlink" href="#module-website.forms" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="website.forms.Addproduct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.forms.</span></span><span class="sig-name descname"><span class="pre">Addproduct</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.forms.Addproduct" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">FlaskForm</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.Addproduct.barcode">
+<span class="sig-name descname"><span class="pre">barcode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('barcode',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.Addproduct.barcode" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.Addproduct.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SubmitField,</span> <span class="pre">('add_prod',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.Addproduct.submit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.forms.DeleteProductForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.forms.</span></span><span class="sig-name descname"><span class="pre">DeleteProductForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.forms.DeleteProductForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">FlaskForm</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.DeleteProductForm.barcode">
+<span class="sig-name descname"><span class="pre">barcode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('barcode',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.DeleteProductForm.barcode" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.DeleteProductForm.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SubmitField,</span> <span class="pre">('Delete',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.DeleteProductForm.delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.forms.DeleteUserForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.forms.</span></span><span class="sig-name descname"><span class="pre">DeleteUserForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.forms.DeleteUserForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">FlaskForm</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.DeleteUserForm.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SubmitField,</span> <span class="pre">('Delete</span> <span class="pre">User',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.DeleteUserForm.delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.DeleteUserForm.user_id">
+<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(IntegerField,</span> <span class="pre">('User</span> <span class="pre">ID',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.DeleteUserForm.user_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.forms.SignalerProduit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.forms.</span></span><span class="sig-name descname"><span class="pre">SignalerProduit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.forms.SignalerProduit" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">FlaskForm</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.SignalerProduit.cause">
+<span class="sig-name descname"><span class="pre">cause</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('la</span> <span class="pre">cause</span> <span class="pre">du</span> <span class="pre">signalement',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.SignalerProduit.cause" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.SignalerProduit.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SubmitField,</span> <span class="pre">('Signaler',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.SignalerProduit.submit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.forms.loginForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.forms.</span></span><span class="sig-name descname"><span class="pre">loginForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.forms.loginForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">FlaskForm</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.loginForm.email">
+<span class="sig-name descname"><span class="pre">email</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('email',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;,</span> <span class="pre">&lt;wtforms.validators.Email</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.loginForm.email" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.loginForm.password">
+<span class="sig-name descname"><span class="pre">password</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(PasswordField,</span> <span class="pre">('password',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.loginForm.password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.loginForm.remember">
+<span class="sig-name descname"><span class="pre">remember</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(BooleanField,</span> <span class="pre">('Remember</span> <span class="pre">Me',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.loginForm.remember" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.loginForm.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SubmitField,</span> <span class="pre">('Login',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.loginForm.submit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.forms.registrationForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.forms.</span></span><span class="sig-name descname"><span class="pre">registrationForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.forms.registrationForm" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">FlaskForm</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.confirm_password">
+<span class="sig-name descname"><span class="pre">confirm_password</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(PasswordField,</span> <span class="pre">('confirm_password',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;,</span> <span class="pre">&lt;wtforms.validators.EqualTo</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.confirm_password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.email">
+<span class="sig-name descname"><span class="pre">email</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('email',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.email" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.nom">
+<span class="sig-name descname"><span class="pre">nom</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('nom',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;,</span> <span class="pre">&lt;wtforms.validators.Length</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.nom" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.password">
+<span class="sig-name descname"><span class="pre">password</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(PasswordField,</span> <span class="pre">('password',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.prenom">
+<span class="sig-name descname"><span class="pre">prenom</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('prenom',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;,</span> <span class="pre">&lt;wtforms.validators.Length</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.prenom" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.submit">
+<span class="sig-name descname"><span class="pre">submit</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SubmitField,</span> <span class="pre">('Signe</span> <span class="pre">Up',),</span> <span class="pre">{})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.submit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.username">
+<span class="sig-name descname"><span class="pre">username</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(StringField,</span> <span class="pre">('nom</span> <span class="pre">utilisateur',),</span> <span class="pre">{'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;,</span> <span class="pre">&lt;wtforms.validators.Length</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.username" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.wilaya">
+<span class="sig-name descname"><span class="pre">wilaya</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;UnboundField(SelectField,</span> <span class="pre">('Wilaya',),</span> <span class="pre">{'choices':</span> <span class="pre">[('Adrar',</span> <span class="pre">'Adrar'),</span> <span class="pre">('Chlef',</span> <span class="pre">'Chlef'),</span> <span class="pre">('Laghouat',</span> <span class="pre">'Laghouat'),</span> <span class="pre">('Oum</span> <span class="pre">El</span> <span class="pre">Bouaghi',</span> <span class="pre">'Oum</span> <span class="pre">El</span> <span class="pre">Bouaghi'),</span> <span class="pre">('Batna',</span> <span class="pre">'Batna'),</span> <span class="pre">('Béjaïa',</span> <span class="pre">'Béjaïa'),</span> <span class="pre">('Biskra',</span> <span class="pre">'Biskra'),</span> <span class="pre">('Béchar',</span> <span class="pre">'Béchar'),</span> <span class="pre">('Blida',</span> <span class="pre">'Blida'),</span> <span class="pre">('Bouira',</span> <span class="pre">'Bouira'),</span> <span class="pre">('Tamanrasset',</span> <span class="pre">'Tamanrasset'),</span> <span class="pre">('Tébessa',</span> <span class="pre">'Tébessa'),</span> <span class="pre">('Tlemcen',</span> <span class="pre">'Tlemcen'),</span> <span class="pre">('Tiaret',</span> <span class="pre">'Tiaret'),</span> <span class="pre">('Tizi</span> <span class="pre">Ouzou',</span> <span class="pre">'Tizi</span> <span class="pre">Ouzou'),</span> <span class="pre">('Alger',</span> <span class="pre">'Alger'),</span> <span class="pre">('Djelfa',</span> <span class="pre">'Djelfa'),</span> <span class="pre">('Jijel',</span> <span class="pre">'Jijel'),</span> <span class="pre">('Sétif',</span> <span class="pre">'Sétif'),</span> <span class="pre">('Saïda',</span> <span class="pre">'Saïda'),</span> <span class="pre">('Skikda',</span> <span class="pre">'Skikda'),</span> <span class="pre">('Sidi</span> <span class="pre">Bel</span> <span class="pre">Abbès',</span> <span class="pre">'Sidi</span> <span class="pre">Bel</span> <span class="pre">Abbès'),</span> <span class="pre">('Annaba',</span> <span class="pre">'Annaba'),</span> <span class="pre">('Guelma',</span> <span class="pre">'Guelma'),</span> <span class="pre">('Constantine',</span> <span class="pre">'Constantine'),</span> <span class="pre">('Médéa',</span> <span class="pre">'Médéa'),</span> <span class="pre">('Mostaganem',</span> <span class="pre">'Mostaganem'),</span> <span class="pre">(&quot;M'Sila&quot;,</span> <span class="pre">&quot;M'Sila&quot;),</span> <span class="pre">('Mascara',</span> <span class="pre">'Mascara'),</span> <span class="pre">('Ouargla',</span> <span class="pre">'Ouargla'),</span> <span class="pre">('Oran',</span> <span class="pre">'Oran'),</span> <span class="pre">('El</span> <span class="pre">Bayadh',</span> <span class="pre">'El</span> <span class="pre">Bayadh'),</span> <span class="pre">('Illizi',</span> <span class="pre">'Illizi'),</span> <span class="pre">('Bordj</span> <span class="pre">Bou</span> <span class="pre">Arreridj',</span> <span class="pre">'Bordj</span> <span class="pre">Bou</span> <span class="pre">Arreridj'),</span> <span class="pre">('Boumerdès',</span> <span class="pre">'Boumerdès'),</span> <span class="pre">('El</span> <span class="pre">Tarf',</span> <span class="pre">'El</span> <span class="pre">Tarf'),</span> <span class="pre">('Tindouf',</span> <span class="pre">'Tindouf'),</span> <span class="pre">('Tissemsilt',</span> <span class="pre">'Tissemsilt'),</span> <span class="pre">('El</span> <span class="pre">Oued',</span> <span class="pre">'El</span> <span class="pre">Oued'),</span> <span class="pre">('Khenchela',</span> <span class="pre">'Khenchela'),</span> <span class="pre">('Souk</span> <span class="pre">Ahras',</span> <span class="pre">'Souk</span> <span class="pre">Ahras'),</span> <span class="pre">('Tipaza',</span> <span class="pre">'Tipaza'),</span> <span class="pre">('Mila',</span> <span class="pre">'Mila'),</span> <span class="pre">('Aïn</span> <span class="pre">Defla',</span> <span class="pre">'Aïn</span> <span class="pre">Defla'),</span> <span class="pre">('Naâma',</span> <span class="pre">'Naâma'),</span> <span class="pre">('Aïn</span> <span class="pre">Témouchent',</span> <span class="pre">'Aïn</span> <span class="pre">Témouchent'),</span> <span class="pre">('Ghardaïa',</span> <span class="pre">'Ghardaïa'),</span> <span class="pre">('Relizane',</span> <span class="pre">'Relizane')],</span> <span class="pre">'validators':</span> <span class="pre">[&lt;wtforms.validators.DataRequired</span> <span class="pre">object&gt;]})&gt;</span></em><a class="headerlink" href="#website.forms.registrationForm.wilaya" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.forms.registrationForm.wilaya_choices">
+<span class="sig-name descname"><span class="pre">wilaya_choices</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('Adrar',</span> <span class="pre">'Adrar'),</span> <span class="pre">('Chlef',</span> <span class="pre">'Chlef'),</span> <span class="pre">('Laghouat',</span> <span class="pre">'Laghouat'),</span> <span class="pre">('Oum</span> <span class="pre">El</span> <span class="pre">Bouaghi',</span> <span class="pre">'Oum</span> <span class="pre">El</span> <span class="pre">Bouaghi'),</span> <span class="pre">('Batna',</span> <span class="pre">'Batna'),</span> <span class="pre">('Béjaïa',</span> <span class="pre">'Béjaïa'),</span> <span class="pre">('Biskra',</span> <span class="pre">'Biskra'),</span> <span class="pre">('Béchar',</span> <span class="pre">'Béchar'),</span> <span class="pre">('Blida',</span> <span class="pre">'Blida'),</span> <span class="pre">('Bouira',</span> <span class="pre">'Bouira'),</span> <span class="pre">('Tamanrasset',</span> <span class="pre">'Tamanrasset'),</span> <span class="pre">('Tébessa',</span> <span class="pre">'Tébessa'),</span> <span class="pre">('Tlemcen',</span> <span class="pre">'Tlemcen'),</span> <span class="pre">('Tiaret',</span> <span class="pre">'Tiaret'),</span> <span class="pre">('Tizi</span> <span class="pre">Ouzou',</span> <span class="pre">'Tizi</span> <span class="pre">Ouzou'),</span> <span class="pre">('Alger',</span> <span class="pre">'Alger'),</span> <span class="pre">('Djelfa',</span> <span class="pre">'Djelfa'),</span> <span class="pre">('Jijel',</span> <span class="pre">'Jijel'),</span> <span class="pre">('Sétif',</span> <span class="pre">'Sétif'),</span> <span class="pre">('Saïda',</span> <span class="pre">'Saïda'),</span> <span class="pre">('Skikda',</span> <span class="pre">'Skikda'),</span> <span class="pre">('Sidi</span> <span class="pre">Bel</span> <span class="pre">Abbès',</span> <span class="pre">'Sidi</span> <span class="pre">Bel</span> <span class="pre">Abbès'),</span> <span class="pre">('Annaba',</span> <span class="pre">'Annaba'),</span> <span class="pre">('Guelma',</span> <span class="pre">'Guelma'),</span> <span class="pre">('Constantine',</span> <span class="pre">'Constantine'),</span> <span class="pre">('Médéa',</span> <span class="pre">'Médéa'),</span> <span class="pre">('Mostaganem',</span> <span class="pre">'Mostaganem'),</span> <span class="pre">(&quot;M'Sila&quot;,</span> <span class="pre">&quot;M'Sila&quot;),</span> <span class="pre">('Mascara',</span> <span class="pre">'Mascara'),</span> <span class="pre">('Ouargla',</span> <span class="pre">'Ouargla'),</span> <span class="pre">('Oran',</span> <span class="pre">'Oran'),</span> <span class="pre">('El</span> <span class="pre">Bayadh',</span> <span class="pre">'El</span> <span class="pre">Bayadh'),</span> <span class="pre">('Illizi',</span> <span class="pre">'Illizi'),</span> <span class="pre">('Bordj</span> <span class="pre">Bou</span> <span class="pre">Arreridj',</span> <span class="pre">'Bordj</span> <span class="pre">Bou</span> <span class="pre">Arreridj'),</span> <span class="pre">('Boumerdès',</span> <span class="pre">'Boumerdès'),</span> <span class="pre">('El</span> <span class="pre">Tarf',</span> <span class="pre">'El</span> <span class="pre">Tarf'),</span> <span class="pre">('Tindouf',</span> <span class="pre">'Tindouf'),</span> <span class="pre">('Tissemsilt',</span> <span class="pre">'Tissemsilt'),</span> <span class="pre">('El</span> <span class="pre">Oued',</span> <span class="pre">'El</span> <span class="pre">Oued'),</span> <span class="pre">('Khenchela',</span> <span class="pre">'Khenchela'),</span> <span class="pre">('Souk</span> <span class="pre">Ahras',</span> <span class="pre">'Souk</span> <span class="pre">Ahras'),</span> <span class="pre">('Tipaza',</span> <span class="pre">'Tipaza'),</span> <span class="pre">('Mila',</span> <span class="pre">'Mila'),</span> <span class="pre">('Aïn</span> <span class="pre">Defla',</span> <span class="pre">'Aïn</span> <span class="pre">Defla'),</span> <span class="pre">('Naâma',</span> <span class="pre">'Naâma'),</span> <span class="pre">('Aïn</span> <span class="pre">Témouchent',</span> <span class="pre">'Aïn</span> <span class="pre">Témouchent'),</span> <span class="pre">('Ghardaïa',</span> <span class="pre">'Ghardaïa'),</span> <span class="pre">('Relizane',</span> <span class="pre">'Relizane')]</span></em><a class="headerlink" href="#website.forms.registrationForm.wilaya_choices" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-website.models">
+<span id="website-models-module"></span><h2>website.models module<a class="headerlink" href="#module-website.models" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="website.models.Produits">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.models.</span></span><span class="sig-name descname"><span class="pre">Produits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.models.Produits" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.categories">
+<span class="sig-name descname"><span class="pre">categories</span></span><a class="headerlink" href="#website.models.Produits.categories" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.components">
+<span class="sig-name descname"><span class="pre">components</span></span><a class="headerlink" href="#website.models.Produits.components" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.energie">
+<span class="sig-name descname"><span class="pre">energie</span></span><a class="headerlink" href="#website.models.Produits.energie" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.fibres">
+<span class="sig-name descname"><span class="pre">fibres</span></span><a class="headerlink" href="#website.models.Produits.fibres" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#website.models.Produits.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.image_url">
+<span class="sig-name descname"><span class="pre">image_url</span></span><a class="headerlink" href="#website.models.Produits.image_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#website.models.Produits.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.proteines">
+<span class="sig-name descname"><span class="pre">proteines</span></span><a class="headerlink" href="#website.models.Produits.proteines" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.query">
+<span class="sig-name descname"><span class="pre">query</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">t.ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">Query</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#website.models.Produits.query" title="Link to this definition">¶</a></dt>
+<dd><p>A SQLAlchemy query for a model. Equivalent to <code class="docutils literal notranslate"><span class="pre">db.session.query(Model)</span></code>. Can be
+customized per-model by overriding <code class="xref py py-attr docutils literal notranslate"><span class="pre">query_class</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>The query interface is considered legacy in SQLAlchemy. Prefer using
+<code class="docutils literal notranslate"><span class="pre">session.execute(select())</span></code> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.sodium">
+<span class="sig-name descname"><span class="pre">sodium</span></span><a class="headerlink" href="#website.models.Produits.sodium" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.Produits.sugars">
+<span class="sig-name descname"><span class="pre">sugars</span></span><a class="headerlink" href="#website.models.Produits.sugars" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="website.models.Produits.update_attributes">
+<span class="sig-name descname"><span class="pre">update_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.models.Produits.update_attributes" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.models.User">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.models.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.models.User" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="website.models.User.delete_user">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delete_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.models.User.delete_user" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#website.models.User.email" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#website.models.User.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.nom">
+<span class="sig-name descname"><span class="pre">nom</span></span><a class="headerlink" href="#website.models.User.nom" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#website.models.User.password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.prenom">
+<span class="sig-name descname"><span class="pre">prenom</span></span><a class="headerlink" href="#website.models.User.prenom" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.query">
+<span class="sig-name descname"><span class="pre">query</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">t.ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">Query</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#website.models.User.query" title="Link to this definition">¶</a></dt>
+<dd><p>A SQLAlchemy query for a model. Equivalent to <code class="docutils literal notranslate"><span class="pre">db.session.query(Model)</span></code>. Can be
+customized per-model by overriding <code class="xref py py-attr docutils literal notranslate"><span class="pre">query_class</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>The query interface is considered legacy in SQLAlchemy. Prefer using
+<code class="docutils literal notranslate"><span class="pre">session.execute(select())</span></code> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#website.models.User.username" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.User.wilaya">
+<span class="sig-name descname"><span class="pre">wilaya</span></span><a class="headerlink" href="#website.models.User.wilaya" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="website.models.signalements">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">website.models.</span></span><span class="sig-name descname"><span class="pre">signalements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.models.signalements" title="Link to this definition">¶</a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.cause">
+<span class="sig-name descname"><span class="pre">cause</span></span><a class="headerlink" href="#website.models.signalements.cause" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#website.models.signalements.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.idproduit">
+<span class="sig-name descname"><span class="pre">idproduit</span></span><a class="headerlink" href="#website.models.signalements.idproduit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.nom_poduit">
+<span class="sig-name descname"><span class="pre">nom_poduit</span></span><a class="headerlink" href="#website.models.signalements.nom_poduit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.query">
+<span class="sig-name descname"><span class="pre">query</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">t.ClassVar</span><span class="p"><span class="pre">[</span></span><span class="pre">Query</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#website.models.signalements.query" title="Link to this definition">¶</a></dt>
+<dd><p>A SQLAlchemy query for a model. Equivalent to <code class="docutils literal notranslate"><span class="pre">db.session.query(Model)</span></code>. Can be
+customized per-model by overriding <code class="xref py py-attr docutils literal notranslate"><span class="pre">query_class</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>The query interface is considered legacy in SQLAlchemy. Prefer using
+<code class="docutils literal notranslate"><span class="pre">session.execute(select())</span></code> instead.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.signaleur">
+<span class="sig-name descname"><span class="pre">signaleur</span></span><a class="headerlink" href="#website.models.signalements.signaleur" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="website.models.signalements.wilaya">
+<span class="sig-name descname"><span class="pre">wilaya</span></span><a class="headerlink" href="#website.models.signalements.wilaya" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-website.views">
+<span id="website-views-module"></span><h2>website.views module<a class="headerlink" href="#module-website.views" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="website.views.views">
+<span class="sig-prename descclassname"><span class="pre">website.views.</span></span><span class="sig-name descname"><span class="pre">views</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.views.views" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-website">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-website" title="Link to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="website.add_product">
+<span class="sig-prename descclassname"><span class="pre">website.</span></span><span class="sig-name descname"><span class="pre">add_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">barcode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.add_product" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="website.create_app">
+<span class="sig-prename descclassname"><span class="pre">website.</span></span><span class="sig-name descname"><span class="pre">create_app</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#website.create_app" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="website.create_database">
+<span class="sig-prename descclassname"><span class="pre">website.</span></span><span class="sig-name descname"><span class="pre">create_database</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.create_database" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="website.create_user">
+<span class="sig-prename descclassname"><span class="pre">website.</span></span><span class="sig-name descname"><span class="pre">create_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prenom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wilaya</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.create_user" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="website.delete_product">
+<span class="sig-prename descclassname"><span class="pre">website.</span></span><span class="sig-name descname"><span class="pre">delete_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">barcode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.delete_product" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="website.signaler_produit">
+<span class="sig-prename descclassname"><span class="pre">website.</span></span><span class="sig-name descname"><span class="pre">signaler_produit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">barcode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nom_poduit</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signaleur</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cause</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wilaya</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#website.signaler_produit" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">INFOOD</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, *RAMDANI Ramdane *Ameur Samy-Lyes.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/website.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

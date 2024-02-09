@@ -1,0 +1,73 @@
+{%extends "general.html"%}
+{%block content%}
+<div class="container-register">
+    <form action="" method="POST">
+        <div class="csrf-field">
+            {{ add_form.hidden_tag() }}
+        </div> 
+         <!-- eviter les cross forgery request attacks -->
+        <fieldset class="form">
+            <legend class="legend">add product</legend>
+            <div class="form">
+                {{ add_form.barcode.label(class='form-control') }}
+                {{ add_form.barcode(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ add_form.submit(class='btn') }}
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+<div class="container-register">
+    <form action="" method="POST">
+        <div class="csrf-field">
+            {{ delete_product_form.hidden_tag() }}
+        </div> 
+         <!-- eviter les cross forgery request attacks -->
+        <fieldset class="form">
+            <legend class="legend">delete product</legend>
+            <div class="form">
+                {{ delete_product_form.barcode.label(class='form-control') }}
+                {{ delete_product_form.barcode(class='form-input') }}
+            </div>
+            <div class="form">
+                {{ delete_product_form.delete(class='btn') }}
+            </div>
+        </fieldset>
+    </form>
+    <h2 class="titre">List of Users</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Wilaya</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.nom }}</td>
+                    <td>{{ user.prenom }}</td>
+                    <td>{{ user.wilaya }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('dashboard') }}" onsubmit="alert('Form submitted!');">
+                            {{ delete_user_form.csrf_token }}
+                            {{ delete_user_form.user_id(value=user.id, class='cacher') }}
+                            {{ delete_user_form.delete(class='btn') }}
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</div>
+
+
+
+{%endblock%}
